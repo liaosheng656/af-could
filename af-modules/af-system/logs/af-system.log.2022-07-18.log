@@ -1,0 +1,43 @@
+2022-07-18 18:07:47.199 [main] INFO  com.af.AfSystemSpringBoot - Starting AfSystemSpringBoot using Java 1.8.0_131 on DESKTOP-MGO4V5P with PID 360 (C:\Users\19129\eclipse-code-201909\af-could\af-modules\af-system\target\classes started by 19129 in C:\Users\19129\eclipse-code-201909\af-could\af-modules\af-system)
+2022-07-18 18:07:47.203 [main] INFO  com.af.AfSystemSpringBoot - No active profile set, falling back to 1 default profile: "default"
+2022-07-18 18:07:48.637 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-18 18:07:48.644 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-18 18:07:48.683 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2022-07-18 18:07:48.906 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.af]' package. Please check your configuration.
+2022-07-18 18:07:50.406 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8902 (http)
+2022-07-18 18:07:50.421 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8902"]
+2022-07-18 18:07:50.422 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-18 18:07:50.422 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-18 18:07:50.585 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-18 18:07:50.586 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3290 ms
+2022-07-18 18:07:53.754 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-18 18:07:53.939 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-18 18:07:55.493 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8902"]
+2022-07-18 18:07:55.515 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8902 (http) with context path ''
+2022-07-18 18:07:55.866 [main] WARN  s.d.s.r.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2022-07-18 18:07:55.901 [main] INFO  com.af.AfSystemSpringBoot - Started AfSystemSpringBoot in 9.387 seconds (JVM running for 10.366)
+2022-07-18 18:12:07.604 [http-nio-8902-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-18 18:12:07.604 [http-nio-8902-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-18 18:12:07.606 [http-nio-8902-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-07-18 18:12:07.735 [http-nio-8902-exec-2] WARN  org.springframework.web.servlet.PageNotFound - No mapping for POST /upload/commonUpload
+2022-07-18 18:29:39.449 [main] INFO  com.af.AfSystemSpringBoot - Starting AfSystemSpringBoot using Java 1.8.0_131 on DESKTOP-MGO4V5P with PID 3688 (C:\Users\19129\eclipse-code-201909\af-could\af-modules\af-system\target\classes started by 19129 in C:\Users\19129\eclipse-code-201909\af-could\af-modules\af-system)
+2022-07-18 18:29:39.454 [main] INFO  com.af.AfSystemSpringBoot - No active profile set, falling back to 1 default profile: "default"
+2022-07-18 18:29:40.862 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-18 18:29:40.869 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-18 18:29:40.919 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2022-07-18 18:29:41.162 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.af]' package. Please check your configuration.
+2022-07-18 18:29:42.645 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8902 (http)
+2022-07-18 18:29:42.659 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8902"]
+2022-07-18 18:29:42.660 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-18 18:29:42.660 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-18 18:29:42.818 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-18 18:29:42.818 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3259 ms
+2022-07-18 18:29:46.110 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-18 18:29:46.293 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-18 18:29:48.040 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8902"]
+2022-07-18 18:29:48.066 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8902 (http) with context path ''
+2022-07-18 18:29:48.584 [main] WARN  s.d.s.r.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2022-07-18 18:29:48.639 [main] INFO  com.af.AfSystemSpringBoot - Started AfSystemSpringBoot in 9.891 seconds (JVM running for 10.864)
+2022-07-18 18:29:59.529 [http-nio-8902-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-18 18:29:59.529 [http-nio-8902-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-18 18:29:59.531 [http-nio-8902-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms

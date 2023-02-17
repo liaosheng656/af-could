@@ -1,0 +1,207 @@
+2022-08-21 21:57:10.563 [main] INFO  com.af.AfSystemSpringBoot - Starting AfSystemSpringBoot using Java 1.8.0_131 on DESKTOP-MGO4V5P with PID 2116 (C:\Users\19129\eclipse-code-201909\af-could\af-modules\af-system\target\classes started by 19129 in C:\Users\19129\eclipse-code-201909\af-could\af-modules\af-system)
+2022-08-21 21:57:10.569 [main] INFO  com.af.AfSystemSpringBoot - No active profile set, falling back to 1 default profile: "default"
+2022-08-21 21:57:12.169 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-21 21:57:12.177 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-21 21:57:12.219 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2022-08-21 21:57:12.459 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.af]' package. Please check your configuration.
+2022-08-21 21:57:14.305 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8902 (http)
+2022-08-21 21:57:14.321 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8902"]
+2022-08-21 21:57:14.321 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-21 21:57:14.321 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-08-21 21:57:14.505 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-21 21:57:14.505 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3809 ms
+2022-08-21 21:57:18.280 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-08-21 21:57:18.532 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-08-21 21:57:20.179 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8902"]
+2022-08-21 21:57:20.205 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8902 (http) with context path ''
+2022-08-21 21:57:20.585 [main] WARN  s.d.s.r.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2022-08-21 21:57:20.594 [main] WARN  s.d.s.r.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2022-08-21 21:57:20.627 [main] INFO  com.af.AfSystemSpringBoot - Started AfSystemSpringBoot in 10.916 seconds (JVM running for 12.439)
+2022-08-21 22:07:33.644 [http-nio-8902-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-21 22:07:33.644 [http-nio-8902-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-21 22:07:33.646 [http-nio-8902-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-08-21 22:21:45.784 [http-nio-8902-exec-7] INFO  com.af.controller.file.img.imgController - 媒体截图开始 videoSource:E:\视频媒体资源\DSC02468.JPG , imageTarget:E:\视频媒体资源\12345.JPG
+2022-08-21 22:21:45.817 [http-nio-8902-exec-7] ERROR com.af.controller.file.img.imgController - 获取视频截图异常:msg:Input file not found <E:\视频媒体资源\DSC02468.JPG> ,videoSource :E:\视频媒体资源\DSC02468.JPG
+ws.schild.jave.EncoderException: Input file not found <E:\视频媒体资源\DSC02468.JPG>
+	at ws.schild.jave.MultimediaObject.getInfo(MultimediaObject.java:171)
+	at com.af.controller.file.img.imgController.getVideoProcessImage(imgController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.af.common.filter.CorsFilter.doFilter(CorsFilter.java:80)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-08-21 22:21:51.342 [http-nio-8902-exec-8] INFO  com.af.controller.file.img.imgController - 媒体截图开始 videoSource:E:\视频媒体资源\DSC02468.JPG , imageTarget:E:\视频媒体资源\12345.JPG
+2022-08-21 22:21:51.342 [http-nio-8902-exec-8] ERROR com.af.controller.file.img.imgController - 获取视频截图异常:msg:Input file not found <E:\视频媒体资源\DSC02468.JPG> ,videoSource :E:\视频媒体资源\DSC02468.JPG
+ws.schild.jave.EncoderException: Input file not found <E:\视频媒体资源\DSC02468.JPG>
+	at ws.schild.jave.MultimediaObject.getInfo(MultimediaObject.java:171)
+	at com.af.controller.file.img.imgController.getVideoProcessImage(imgController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.af.common.filter.CorsFilter.doFilter(CorsFilter.java:80)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-08-21 22:25:36.365 [http-nio-8902-exec-5] INFO  com.af.controller.file.img.imgController - 媒体截图开始 videoSource:E:\视频媒体资源\DSC02468.JPG , imageTarget:E:\视频媒体资源\12345.JPG
+2022-08-21 22:25:56.090 [http-nio-8902-exec-5] INFO  ws.schild.jave.ConversionOutputAnalyzer - Unhandled message in step: 2 Line: 7 message: <[swscaler @ 000002969ccf6840] deprecated pixel format used, make sure you did set range correctly>
+2022-08-21 22:28:49.973 [http-nio-8902-exec-6] INFO  com.af.controller.file.img.imgController - 媒体截图开始 videoSource:E:\视频媒体资源\DSC02468.JPG , imageTarget:E:\视频媒体资源\12345.JPG
+2022-08-21 22:28:55.133 [http-nio-8902-exec-6] INFO  ws.schild.jave.ConversionOutputAnalyzer - Unhandled message in step: 2 Line: 7 message: <[swscaler @ 000001783e136840] deprecated pixel format used, make sure you did set range correctly>
+2022-08-21 22:58:50.760 [http-nio-8902-exec-7] INFO  com.af.controller.file.img.imgController - 媒体截图开始 videoSource:E:\视频媒体资源\Camera Roll\图片\14.jpeg , imageTarget:E:\视频媒体资源\12345.JPG
+2022-08-21 22:59:54.604 [http-nio-8902-exec-7] INFO  ws.schild.jave.ConversionOutputAnalyzer - Unhandled message in step: 2 Line: 7 message: <[swscaler @ 000002c662ce8880] deprecated pixel format used, make sure you did set range correctly>
+2022-08-21 23:50:44.401 [main] INFO  com.af.AfSystemSpringBoot - Starting AfSystemSpringBoot using Java 1.8.0_131 on DESKTOP-MGO4V5P with PID 15292 (C:\Users\19129\eclipse-code-201909\af-could\af-modules\af-system\target\classes started by 19129 in C:\Users\19129\eclipse-code-201909\af-could\af-modules\af-system)
+2022-08-21 23:50:44.407 [main] INFO  com.af.AfSystemSpringBoot - No active profile set, falling back to 1 default profile: "default"
+2022-08-21 23:50:46.094 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-21 23:50:46.101 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-21 23:50:46.152 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2022-08-21 23:50:46.438 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.af]' package. Please check your configuration.
+2022-08-21 23:50:48.171 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8902 (http)
+2022-08-21 23:50:48.192 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8902"]
+2022-08-21 23:50:48.193 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-21 23:50:48.193 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-08-21 23:50:48.385 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-21 23:50:48.385 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3869 ms
+2022-08-21 23:50:52.173 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-08-21 23:50:52.398 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-08-21 23:50:54.081 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8902"]
+2022-08-21 23:50:54.103 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8902 (http) with context path ''
+2022-08-21 23:50:54.486 [main] WARN  s.d.s.r.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2022-08-21 23:50:54.497 [main] WARN  s.d.s.r.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2022-08-21 23:50:54.527 [main] INFO  com.af.AfSystemSpringBoot - Started AfSystemSpringBoot in 10.908 seconds (JVM running for 12.027)
+2022-08-21 23:51:22.090 [http-nio-8902-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-21 23:51:22.091 [http-nio-8902-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-21 23:51:22.092 [http-nio-8902-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-08-21 23:51:22.144 [http-nio-8902-exec-2] INFO  com.af.controller.file.img.imgController - 媒体截图开始 videoSource:E:\视频媒体资源\DSC02468.JPG , imageTarget:E:\视频媒体资源\12345.JPG
+2022-08-21 23:51:22.423 [http-nio-8902-exec-2] INFO  ws.schild.jave.ConversionOutputAnalyzer - Unhandled message in step: 2 Line: 7 message: <[swscaler @ 000001cce8d32600] deprecated pixel format used, make sure you did set range correctly>
+2022-08-21 23:52:39.917 [http-nio-8902-exec-5] INFO  com.af.controller.file.img.imgController - 媒体截图开始 videoSource:E:\视频媒体资源\DSC02468.JPG , imageTarget:E:\视频媒体资源\12345.JPG
+2022-08-21 23:52:40.135 [http-nio-8902-exec-5] INFO  ws.schild.jave.ConversionOutputAnalyzer - Unhandled message in step: 2 Line: 7 message: <[swscaler @ 000001d52fee6840] deprecated pixel format used, make sure you did set range correctly>
+2022-08-21 23:56:10.688 [http-nio-8902-exec-8] INFO  com.af.controller.file.img.imgController - 媒体截图开始 videoSource:E:\视频媒体资源\DSC02468.JPG , imageTarget:E:\视频媒体资源\12345.JPG
+2022-08-21 23:56:10.910 [http-nio-8902-exec-8] INFO  ws.schild.jave.ConversionOutputAnalyzer - Unhandled message in step: 2 Line: 7 message: <[swscaler @ 000001c92d912600] deprecated pixel format used, make sure you did set range correctly>
+2022-08-21 23:56:27.728 [main] INFO  com.af.AfSystemSpringBoot - Starting AfSystemSpringBoot using Java 1.8.0_131 on DESKTOP-MGO4V5P with PID 10904 (C:\Users\19129\eclipse-code-201909\af-could\af-modules\af-system\target\classes started by 19129 in C:\Users\19129\eclipse-code-201909\af-could\af-modules\af-system)
+2022-08-21 23:56:27.733 [main] INFO  com.af.AfSystemSpringBoot - No active profile set, falling back to 1 default profile: "default"
+2022-08-21 23:56:29.270 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-21 23:56:29.278 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-21 23:56:29.334 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2022-08-21 23:56:29.614 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.af]' package. Please check your configuration.
+2022-08-21 23:56:31.177 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8902 (http)
+2022-08-21 23:56:31.195 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8902"]
+2022-08-21 23:56:31.195 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-21 23:56:31.195 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-08-21 23:56:31.359 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-21 23:56:31.360 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3515 ms
+2022-08-21 23:56:34.863 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-08-21 23:56:35.091 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-08-21 23:56:36.786 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8902"]
+2022-08-21 23:56:36.820 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8902 (http) with context path ''
+2022-08-21 23:56:37.277 [main] WARN  s.d.s.r.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2022-08-21 23:56:37.289 [main] WARN  s.d.s.r.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2022-08-21 23:56:37.325 [main] INFO  com.af.AfSystemSpringBoot - Started AfSystemSpringBoot in 10.498 seconds (JVM running for 11.636)
+2022-08-21 23:56:57.012 [http-nio-8902-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-21 23:56:57.012 [http-nio-8902-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-21 23:56:57.014 [http-nio-8902-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-08-21 23:56:57.063 [http-nio-8902-exec-2] INFO  com.af.controller.file.img.imgController - 媒体截图开始 videoSource:E:\视频媒体资源\DSC02468.JPG , imageTarget:E:\视频媒体资源\12345.JPG
+2022-08-21 23:57:35.918 [http-nio-8902-exec-2] INFO  ws.schild.jave.ConversionOutputAnalyzer - Unhandled message in step: 2 Line: 7 message: <[swscaler @ 0000013902b32600] deprecated pixel format used, make sure you did set range correctly>
+2022-08-21 23:57:45.940 [http-nio-8902-exec-3] INFO  com.af.controller.file.img.imgController - 媒体截图开始 videoSource:E:\视频媒体资源\Camera Roll\图片\14.jpeg , imageTarget:E:\视频媒体资源\12345.JPG
+2022-08-21 23:57:55.300 [http-nio-8902-exec-3] INFO  ws.schild.jave.ConversionOutputAnalyzer - Unhandled message in step: 2 Line: 7 message: <[swscaler @ 0000020b48928c40] deprecated pixel format used, make sure you did set range correctly>
+2022-08-21 23:59:13.861 [main] INFO  com.af.AfSystemSpringBoot - Starting AfSystemSpringBoot using Java 1.8.0_131 on DESKTOP-MGO4V5P with PID 8360 (C:\Users\19129\eclipse-code-201909\af-could\af-modules\af-system\target\classes started by 19129 in C:\Users\19129\eclipse-code-201909\af-could\af-modules\af-system)
+2022-08-21 23:59:13.869 [main] INFO  com.af.AfSystemSpringBoot - No active profile set, falling back to 1 default profile: "default"
+2022-08-21 23:59:15.451 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-21 23:59:15.460 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-21 23:59:15.504 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2022-08-21 23:59:15.746 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.af]' package. Please check your configuration.
+2022-08-21 23:59:17.300 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8902 (http)
+2022-08-21 23:59:17.320 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8902"]
+2022-08-21 23:59:17.321 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-21 23:59:17.322 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-08-21 23:59:17.504 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-21 23:59:17.505 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3529 ms
+2022-08-21 23:59:20.863 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-08-21 23:59:21.071 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-08-21 23:59:22.648 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8902"]
+2022-08-21 23:59:22.671 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8902 (http) with context path ''
+2022-08-21 23:59:23.076 [main] WARN  s.d.s.r.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2022-08-21 23:59:23.086 [main] WARN  s.d.s.r.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2022-08-21 23:59:23.119 [main] INFO  com.af.AfSystemSpringBoot - Started AfSystemSpringBoot in 10.018 seconds (JVM running for 11.087)
+2022-08-21 23:59:29.405 [http-nio-8902-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-21 23:59:29.405 [http-nio-8902-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-21 23:59:29.407 [http-nio-8902-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-08-21 23:59:29.455 [http-nio-8902-exec-4] INFO  com.af.controller.file.img.imgController - 媒体截图开始 videoSource:E:\视频媒体资源\DSC02468.JPG , imageTarget:E:\视频媒体资源\12345.JPG
+2022-08-21 23:59:58.748 [http-nio-8902-exec-1] INFO  com.af.controller.file.img.imgController - 媒体截图开始 videoSource:E:\视频媒体资源\DSC02468.JPG , imageTarget:E:\视频媒体资源\12345
+2022-08-22 00:04:25.251 [http-nio-8902-exec-8] INFO  com.af.controller.file.img.imgController - 媒体截图开始 videoSource:E:\视频媒体资源\DSC02468.JPG , imageTarget:E:\视频媒体资源\12345

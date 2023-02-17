@@ -1,0 +1,151 @@
+
+#SpringBoot2.4新特性
+# spring.config.activate.on-profile=dev
+# test=overridden-value
+server:
+   port: 8902
+   #server.servlet.context-path=/
+   #server.tomcat.max-threads=200
+   #server.tomcat.accept-count=100
+   #server.tomcat.connection-timeout=10000
+   #server.compression.enabled=true
+   #server.error.path=/error
+spring:
+  # 配置文件上传大小限制
+  servlet:
+    multipart:
+      max-file-size: 2048MB
+      max-request-size: 2048MB
+  application:
+    name: af-system
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    # 解决返回long行的时候精度丢失的问题
+    generator:
+       write-numbers-as-strings: true
+       write-bigdecimal-as-plain: true
+#     serialization:
+#        indent-output: true
+    #如果属性为空则不返回
+    default-property-inclusion: non_null
+  datasource:
+    name: test
+#     url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/crbt_video?useUnicode=true&characterEncoding=UTF8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/qyf_zc001?useUnicode=true&characterEncoding=UTF8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123
+
+  #redis 配置
+  redis:
+    database: 0
+    host: 192.168.72.144
+    password: 'redis'
+    port: 6379
+    #lettuce连接池
+    lettuce:
+      pool:
+        max-active: 8   #最大连接数据库连接数,设 0 为没有限制
+        max-idle: 8     #最大等待连接中的数量,设 0 为没有限制
+        max-wait: -1ms  #最大建立连接等待时间。如果超过此时间将接到异常。设为-1表示无限制。
+        min-idle: 0     #最小等待连接中的数量,设 0 为没有限制
+      #关闭时的超时时间
+      shutdown-timeout: 100ms
+  
+  # redis-cache配置    
+  cache:
+    redis:
+      ## 不允许空值
+      cache-null-values: false 
+      key-prefix: demo3
+      use-key-prefix: true
+      # 单位：毫秒
+      time-to-live: 86400000
+   
+    
+mybatis:
+  configuration:
+    #开启驼峰转换
+    map-underscore-to-camel-case: true
+mybatis-plus:
+   basepackage: com.af.common.moudules.mapper
+  # xml位置
+   xmlLocation: classpath*:com/af/common/moudules/**/xml/*.xml
+   mapper-locations: "classpath*:com/af/common/moudules/**/xml/*.xml"
+   # mapper.xml文件中resultMap的type或者parameterType会使用自定义的pojo，
+   #此时可以用完全限定名来指定这些POJO的引用，
+   #例如<select id="getUsers" resultType="com.e3mall.cms.dao.mapper.User">，
+#    type-aliases-package: com.liao.entity
+   configuration:
+       # 在控制台打印sql
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    com.liao: debug
+
+  # 缓存配置
+#   cache:
+#     type: ehcache
+#     ehcache:
+#       config: classpath:ehcache.xml
+
+
+  rabbitmq:
+    host: 192.168.72.142
+    port: 5672
+    username: admin
+    password: 123456
+    #类似目录或命名空间
+    virtualHost: /
+    #有关AmqpTemplate的配置，
+    #如果consumer只是接收消息而不发送，就不用配置template相关内容
+    template:
+      #失败重试
+      retry:
+        #开启失败重试
+        enabled: true
+        #第一次重试的间隔时长
+        initial-interval: 10000ms
+        #最长重试间隔，超过这个间隔将不再重试
+        max-interval: 300000ms
+        #下次重试间隔的倍数，此处是2即下次重试间隔是上次的2倍
+        multiplier: 2
+      #默认的交换机名称，此处配置后，发送消息如果不指定交换机就会使用这个
+      exchange: topic.exchange
+    #生产者确认机制，确保消息会正确发送，如果发送失败会有错误回执，从而触发重试
+    publisher-confirms: true
+
+
+# jeecg:
+#   uploadType: Minio
+#   path:
+#     upload: /data/opt/upFiles
+#     webapp: /data/opt/webapp
+# 
+#   desform:
+#     theme-color: "#1890ff"
+#   file-view-domain: http://fileview.jeecg.com
+# minio 参数配置
+# minio:
+#   endpoint: http://192.168.72.142:9000
+#   accessKey: minioadmin
+#   secretKey: minioadmin
+  
+minio:
+  endpoint: https://192.168.40.222:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+ 
+# ES参数配置
+elasticsearch:
+  schema: http
+  address: 192.168.72.142:9200 #你的服务器地址
+  port: 9200
+  connectTimeout: 5000
+  socketTimeout: 5000
+  connectionRequestTimeout: 5000
+  maxConnectNum: 100
+  maxConnectPerRoute: 100
+  userName: elastic #账号
+  password: 123456 #你的elasticsearch密码

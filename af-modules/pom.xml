@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>af-could</groupId>
+    <artifactId>af-could</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>af-modules</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>af-system</module>
+  	<module>af-rabbitmq-consume</module>
+  </modules>
+  
+  <dependencies>
+  	<dependency>
+	    <groupId>af-could</groupId>
+	    <artifactId>af-common-modules</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+	    <groupId>af-could</groupId>
+	    <artifactId>af-common-core</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+	    <groupId>af-could</groupId>
+	    <artifactId>af-common-config</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+  	</dependency>  	  	
+  </dependencies>
+</project>

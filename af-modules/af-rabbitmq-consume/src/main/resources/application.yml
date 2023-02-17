@@ -1,0 +1,19 @@
+
+#SpringBoot2.4新特性
+# spring.config.activate.on-profile=dev
+# test=overridden-value
+server:
+   port: 8902
+spring:
+  application:
+    name: af-rabbitmq-consume
+  rabbitmq:
+    host: 192.168.72.134
+    port: 5672
+    username: admin
+    password: 123456
+    #类似目录或命名空间
+    virtualHost: /
+     #有关AmqpTemplate的配置，
+     #生产者确认机制，确保消息会正确发送，如果发送失败会有错误回执，从而触发重试
+    publisher-confirms: true
