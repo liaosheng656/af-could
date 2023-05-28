@@ -19,7 +19,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  * @date: 2022/03/09 20:26:37 
  *
  */
-//@MapperScan("com.liao.mapper")
+@MapperScan("com.af.mapper")
 @SpringBootApplication
 
 //开启SpringBoot的缓存

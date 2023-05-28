@@ -185,6 +185,26 @@ public class RabbitmqConfig {
      *
      */
     @Bean(QUEUE_A)
+    public Queue emailQueueA(){
+        Map<String, Object> arguments = new HashMap<>(1);
+        //设置队列消息TTL过期时间（单位：ms毫秒），这里设置为10秒，当消息过期后，还没有被消费，该消息也会被删除掉
+        arguments.put("x-message-ttl",10000);
+        // x-dead-letter-exchange 声明了队列里的死信转发到的DLX名称，转发到对应死信队列中
+        arguments.put("x-dead-letter-exchange", EXCHANGE_A);
+
+        return new Queue(QUEUE_A,true,false,false,arguments);
+    }
+
+
+    /**
+     *   声明正常的队列A----TTL过期时间
+     *   new Queue(QUEUE_EMAIL,true,false,false)
+     *   durable="true" 持久化 rabbitmq重启的时候不需要创建新的队列
+     *   auto-delete 表示消息队列没有在使用时将被自动删除 默认是false
+     *   exclusive  表示该消息队列是否只在当前connection生效,默认是false
+     *
+     */
+    @Bean(QUEUE_B)
     public Queue emailQueueB(){
         Map<String, Object> arguments = new HashMap<>(1);
         //设置队列消息TTL过期时间（单位：ms毫秒），这里设置为10秒，当消息过期后，还没有被消费，该消息也会被删除掉

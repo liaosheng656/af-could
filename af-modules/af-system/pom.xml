@@ -29,6 +29,44 @@
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
     </dependency>
-    
+
+      <dependency>
+          <groupId>af-could</groupId>
+          <artifactId>af-common-modules</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+          <groupId>af-could</groupId>
+          <artifactId>af-common-core</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+          <groupId>af-could</groupId>
+          <artifactId>af-common-config</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+
+      <!-- redis-->
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-data-redis</artifactId>
+      </dependency>
+
+      <!-- xxl-job-core -->
+      <dependency>
+          <groupId>com.xuxueli</groupId>
+          <artifactId>xxl-job-core</artifactId>
+          <version>2.3.1</version>
+      </dependency>
+
+      <dependency>
+          <groupId>com.rabbitmq</groupId>
+          <artifactId>amqp-client</artifactId>
+      </dependency>
+      <!--添加AMQP的启动器-->
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-amqp</artifactId>
+      </dependency>
   </dependencies>
 </project>

@@ -10,23 +10,28 @@
   <modules>
   	<module>af-system</module>
   	<module>af-rabbitmq-consume</module>
+	<module>XXL-Job-admin</module>
+	<module>xxl-job-executor-test</module>
   </modules>
-  
-  <dependencies>
-  	<dependency>
-	    <groupId>af-could</groupId>
-	    <artifactId>af-common-modules</artifactId>
-	    <version>0.0.1-SNAPSHOT</version>
-  	</dependency>
-  	<dependency>
-	    <groupId>af-could</groupId>
-	    <artifactId>af-common-core</artifactId>
-	    <version>0.0.1-SNAPSHOT</version>
-  	</dependency>
-  	<dependency>
-	    <groupId>af-could</groupId>
-	    <artifactId>af-common-config</artifactId>
-	    <version>0.0.1-SNAPSHOT</version>
-  	</dependency>  	  	
-  </dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>af-could</groupId>
+				<artifactId>af-common-modules</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>af-could</groupId>
+				<artifactId>af-common-core</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>af-could</groupId>
+				<artifactId>af-common-config</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 </project>
